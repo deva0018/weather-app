@@ -50,7 +50,7 @@ function requestApi(city){
 
 
     let apikey='240cb8498c555780d8fbd4d07f10ae24';
-    let geo=`http://api.openweathermap.org/geo/1.0/direct?q=${city}&limit=1&units=metric&appid=240cb8498c555780d8fbd4d07f10ae24`;
+    let geo=`https://api.openweathermap.org/geo/1.0/direct?q=${city}&limit=1&units=metric&appid=240cb8498c555780d8fbd4d07f10ae24`;
     fetch(geo).then(req=>req.json()).then((res)=>{
         let lon=res[0].lon;
         let lat=res[0].lat;
